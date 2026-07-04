@@ -4,6 +4,7 @@ namespace PHPStan\Rules\PHPUnit;
 
 use PhpParser\Node;
 use PhpParser\Node\Name;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\PhpDoc\ResolvedPhpDocBlock;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
 use PHPStan\Reflection\ReflectionProvider;
@@ -14,6 +15,7 @@ use function explode;
 use function sprintf;
 use function strpos;
 
+#[AutowiredService]
 class CoversHelper
 {
 

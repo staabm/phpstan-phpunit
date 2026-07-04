@@ -4,6 +4,7 @@ namespace PHPStan\Rules\PHPUnit;
 
 use PHPStan\Analyser\Scope;
 use PHPStan\BetterReflection\Reflection\ReflectionMethod;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\PhpDoc\ResolvedPhpDocBlock;
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\MethodReflection;
@@ -13,6 +14,7 @@ use function array_key_exists;
 use function str_starts_with;
 use function strtolower;
 
+#[AutowiredService]
 final class TestMethodsHelper
 {
 

@@ -6,10 +6,12 @@ use PhpParser\Node;
 use PHPStan\Analyser\Error;
 use PHPStan\Analyser\IgnoreErrorExtension;
 use PHPStan\Analyser\Scope;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPUnit\Framework\TestCase;
 use function is_string;
 use function str_starts_with;
 
+#[AutowiredService]
 final class DynamicCallToAssertionIgnoreExtension implements IgnoreErrorExtension
 {
 

@@ -2,6 +2,7 @@
 
 namespace PHPStan\Rules\PHPUnit;
 
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use ReflectionException;
@@ -10,6 +11,7 @@ use function explode;
 use function file_get_contents;
 use function json_decode;
 
+#[AutowiredService]
 class PHPUnitVersionDetector
 {
 

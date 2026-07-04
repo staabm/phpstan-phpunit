@@ -7,6 +7,8 @@ use PharIo\Version\Version;
 use PharIo\Version\VersionConstraintParser;
 use PHPStan\Analyser\Scope;
 use PHPStan\BetterReflection\Reflection\ReflectionAttribute;
+use PHPStan\DependencyInjection\AutowiredParameter;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\Php\PhpMinorVersionIterator;
 use PHPStan\Php\PhpVersion;
 use PHPStan\Rules\IdentifierRuleError;
@@ -20,6 +22,7 @@ use function sprintf;
 use function substr_count;
 use function version_compare;
 
+#[AutowiredService]
 final class AttributeVersionRequirementHelper
 {
 
@@ -43,8 +46,10 @@ final class AttributeVersionRequirementHelper
 
 	public function __construct(
 		PHPUnitVersion $PHPUnitVersion,
+		#[AutowiredParameter('%deprecationRulesInstalled%')]
 		bool $deprecationRulesInstalled,
 		PhpVersion $phpVersion,
+		#[AutowiredParameter('%featureToggles.bleedingEdge%')]
 		bool $bleedingEdge,
 		bool $warnAboutIncompleteVersion = true
 	)

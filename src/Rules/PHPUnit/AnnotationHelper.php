@@ -3,12 +3,14 @@
 namespace PHPStan\Rules\PHPUnit;
 
 use PhpParser\Comment\Doc;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\Rules\IdentifierRuleError;
 use PHPStan\Rules\RuleErrorBuilder;
 use function in_array;
 use function preg_match;
 use function preg_split;
 
+#[AutowiredService]
 class AnnotationHelper
 {
 

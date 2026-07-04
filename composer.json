@@ -9,7 +9,8 @@
 	"require": {
 		"php": "^7.4 || ^8.0",
 		"phar-io/version": "^3.2",
-		"phpstan/phpstan": "^2.2.3"
+		"phpstan/phpstan": "^2.2.3",
+		"ondrejmirtes/composer-attribute-collector": "^1.1.1"
 	},
 	"conflict": {
 		"phpunit/phpunit": "<7.0"
@@ -23,9 +24,17 @@
 		"shipmonk/name-collision-detector": "^2.1"
 	},
 	"config": {
-		"sort-packages": true
+		"sort-packages": true,
+		"allow-plugins": {
+			"ondrejmirtes/composer-attribute-collector": true
+		}
 	},
 	"extra": {
+		"composer-attribute-collector": {
+			"include": [
+				"src"
+			]
+		},
 		"phpstan": {
 			"includes": [
 				"extension.neon",

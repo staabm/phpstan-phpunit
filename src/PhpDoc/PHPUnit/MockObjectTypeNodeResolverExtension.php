@@ -3,6 +3,7 @@
 namespace PHPStan\PhpDoc\PHPUnit;
 
 use PHPStan\Analyser\NameScope;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\PhpDoc\TypeNodeResolver;
 use PHPStan\PhpDoc\TypeNodeResolverAwareExtension;
 use PHPStan\PhpDoc\TypeNodeResolverExtension;
@@ -14,6 +15,7 @@ use PHPStan\Type\TypeCombinator;
 use function array_key_exists;
 use function count;
 
+#[AutowiredService]
 class MockObjectTypeNodeResolverExtension implements TypeNodeResolverExtension, TypeNodeResolverAwareExtension
 {
 

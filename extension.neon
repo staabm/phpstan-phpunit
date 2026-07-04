@@ -30,41 +30,8 @@ parametersSchema:
 
 services:
 	-
-		class: PHPStan\PhpDoc\PHPUnit\MockObjectTypeNodeResolverExtension
-	-
-		class: PHPStan\Type\PHPUnit\Assert\AssertFunctionTypeSpecifyingExtension
-		tags:
-			- phpstan.typeSpecifier.functionTypeSpecifyingExtension
-	-
-		class: PHPStan\Type\PHPUnit\Assert\AssertMethodTypeSpecifyingExtension
-		tags:
-			- phpstan.typeSpecifier.methodTypeSpecifyingExtension
-	-
-		class: PHPStan\Type\PHPUnit\Assert\AssertStaticMethodTypeSpecifyingExtension
-		tags:
-			- phpstan.typeSpecifier.staticMethodTypeSpecifyingExtension
-	-
-		class: PHPStan\Type\PHPUnit\MockBuilderDynamicReturnTypeExtension
-		tags:
-			- phpstan.broker.dynamicMethodReturnTypeExtension
-	-
-		class: PHPStan\Type\PHPUnit\MockForIntersectionDynamicReturnTypeExtension
-		tags:
-			- phpstan.broker.dynamicMethodReturnTypeExtension
-			- phpstan.broker.dynamicStaticMethodReturnTypeExtension
-	-
-		class: PHPStan\Rules\PHPUnit\CoversHelper
-	-
-		class: PHPStan\Rules\PHPUnit\AnnotationHelper
-
-	-
-		class: PHPStan\Rules\PHPUnit\TestMethodsHelper
-
-	-
 		class: PHPStan\Rules\PHPUnit\PHPUnitVersion
 		factory: @PHPStan\Rules\PHPUnit\PHPUnitVersionDetector::createPHPUnitVersion()
-	-
-		class: PHPStan\Rules\PHPUnit\PHPUnitVersionDetector
 
 	-
 		class: PHPStan\Rules\PHPUnit\DataProviderHelper
@@ -73,18 +40,6 @@ services:
 		class: PHPStan\Rules\PHPUnit\DataProviderHelperFactory
 		arguments:
 			parser: @defaultAnalysisParser
-
-	-
-		class: PHPStan\Type\PHPUnit\DataProviderReturnTypeIgnoreExtension
-
-	-
-		class: PHPStan\Type\PHPUnit\DynamicCallToAssertionIgnoreExtension
-
-	-
-		class: PHPStan\Rules\PHPUnit\AttributeVersionRequirementHelper
-		arguments:
-			deprecationRulesInstalled: %deprecationRulesInstalled%
-			bleedingEdge: %featureToggles.bleedingEdge%
 
 conditionalTags:
 	PHPStan\PhpDoc\PHPUnit\MockObjectTypeNodeResolverExtension:

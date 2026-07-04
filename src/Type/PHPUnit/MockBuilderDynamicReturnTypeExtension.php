@@ -4,12 +4,14 @@ namespace PHPStan\Type\PHPUnit;
 
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\Reflection\MethodReflection;
 use PHPStan\Type\DynamicMethodReturnTypeExtension;
 use PHPStan\Type\Type;
 use PHPUnit\Framework\MockObject\MockBuilder;
 use function in_array;
 
+#[AutowiredService]
 class MockBuilderDynamicReturnTypeExtension implements DynamicMethodReturnTypeExtension
 {
 

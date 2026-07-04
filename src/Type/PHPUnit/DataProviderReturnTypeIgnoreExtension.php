@@ -6,10 +6,12 @@ use PhpParser\Node;
 use PHPStan\Analyser\Error;
 use PHPStan\Analyser\IgnoreErrorExtension;
 use PHPStan\Analyser\Scope;
+use PHPStan\DependencyInjection\AutowiredService;
 use PHPStan\Rules\PHPUnit\DataProviderHelper;
 use PHPStan\Rules\PHPUnit\TestMethodsHelper;
 use function in_array;
 
+#[AutowiredService]
 final class DataProviderReturnTypeIgnoreExtension implements IgnoreErrorExtension
 {
 
