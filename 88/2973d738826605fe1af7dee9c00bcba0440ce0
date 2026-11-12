@@ -1,0 +1,35 @@
+tests/Type/PHPUnit/data/assert-function.php
+  h_53f8f6db02589e 14-15
+  s_25efc9a9ed1bf3::t_c4fb19a50b07a0 116-120
+  s_25efc9a9ed1bf3::t_69db9fbda5ee89 121-122
+  s_25efc9a9ed1bf3::t_486926d00475b0 115
+  s_25efc9a9ed1bf3::t_2ba5f105c96ef0 123-127
+  s_25efc9a9ed1bf3::t_9ad31d1b92b461 128
+tests/Type/PHPUnit/data/assert-method.php
+  s_25efc9a9ed1bf3::t_627ae6ff040323 5
+  s_25efc9a9ed1bf3::t_a546d7b786d4d8 22-27,29-57
+  s_25efc9a9ed1bf3::t_d5925d6093d643 21
+  h_53f8f6db02589e 20
+  h_53f8f6db02589e 13-14,18-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "882973d738826605fe1af7dee9c00bcba0440ce0",
+  "prompts": {},
+  "humans": {
+    "h_53f8f6db02589e": {
+      "author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  },
+  "sessions": {
+    "s_25efc9a9ed1bf3": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1794328899770",
+        "model": "unknown"
+      },
+      "human_author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  }
+}
