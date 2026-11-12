@@ -1,0 +1,14 @@
+tests/Type/PHPUnit/data/assert-method.php
+  h_53f8f6db02589e 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "355e74015cac1737f4ed462c138c456a02126bcf",
+  "prompts": {},
+  "humans": {
+    "h_53f8f6db02589e": {
+      "author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  }
+}
