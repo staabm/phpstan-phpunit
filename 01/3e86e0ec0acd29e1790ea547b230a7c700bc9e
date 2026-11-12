@@ -1,0 +1,32 @@
+tests/Rules/PHPUnit/data/empty-data-provider.php
+  h_53f8f6db02589e 304
+  s_25efc9a9ed1bf3::t_bc901f7ed5ba9e 305-324
+  h_53f8f6db02589e 303
+src/Rules/PHPUnit/EmptyDataProviderRule.php
+  h_53f8f6db02589e 60
+tests/Rules/PHPUnit/EmptyDataProviderRuleTest.php
+  s_25efc9a9ed1bf3::t_819eb885d22124 71
+  s_25efc9a9ed1bf3::t_d45610067dd8f2 66-67,69-70,73
+  h_53f8f6db02589e 68,72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "013e86e0ec0acd29e1790ea547b230a7c700bc9e",
+  "prompts": {},
+  "humans": {
+    "h_53f8f6db02589e": {
+      "author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  },
+  "sessions": {
+    "s_25efc9a9ed1bf3": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1794328899770",
+        "model": "unknown"
+      },
+      "human_author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  }
+}
