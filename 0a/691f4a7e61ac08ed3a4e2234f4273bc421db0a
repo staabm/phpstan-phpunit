@@ -1,0 +1,19 @@
+.github/workflows/build.yml
+  s_25efc9a9ed1bf3::t_4cb2f3688b5286 267
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0a691f4a7e61ac08ed3a4e2234f4273bc421db0a",
+  "prompts": {},
+  "sessions": {
+    "s_25efc9a9ed1bf3": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1794328899770",
+        "model": "unknown"
+      },
+      "human_author": "Markus Staab <markus.staab@redaxo.de>"
+    }
+  }
+}
